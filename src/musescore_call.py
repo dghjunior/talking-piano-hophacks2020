@@ -1,6 +1,6 @@
 import subprocess
 
-MUSESCORE_PATH = "C:/Program Files/MuseScore 3/bin/MuseScore3.exe"
+MUSESCORE_PATH = "C:/Program Files/MuseScore 3.5 Testing/bin/MuseScore3.exe"
 
 
 def generate_pdf(input_mid, output_pdf):

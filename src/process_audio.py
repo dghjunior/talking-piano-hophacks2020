@@ -1,5 +1,7 @@
 import librosa
 import librosa.display
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 import soundfile as sf
@@ -22,7 +24,7 @@ def peaks(seq):
 
 
 def db_to_vol(db,freq):
-    transformed = np.fix(np.float((127 - 3 * abs(db))) * np.exp(-freq / 2000))
+    transformed = np.fix(float((127 - 3 * abs(db))) * np.exp(-freq / 2000))
     return transformed if transformed > 32 else 0
 
 
